@@ -1,38 +1,131 @@
-.App {
+* {
+  padding : 0;
+  margin : 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins',sans-serif;
+}
+
+.MainContainer {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin-top : 4em;
   text-align: center;
+  font-size: 11px;
+  padding-inline : 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header > h1 {
+  color : hsl(229, 6%, 66%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header > h1 > span {
+  color : hsl(234, 12%, 34%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.header > p {
+  margin-top : 1em;
+  font-size : 14px;
+  color : hsl(229, 6%, 66%);
+  padding-inline : 2em;
+}
+
+.cardContainer {
+  margin-top : 3em;
+  display : flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width : 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: -1px 9px 13px -3px rgba(0,0,0,0.3);
+  margin-block : .7em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.a {
+  border-top: solid 5px hsl(180, 62%, 55%);
+}
+
+.b {
+  border-top: solid 5px hsl(0, 78%, 62%);
+}
+
+.c {
+  border-top: solid 5px hsl(34, 97%, 64%);
+}
+
+.d {
+  border-top: solid 5px hsl(212, 86%, 64%);
+}
+
+.cardInterior > h1 {
+  font-size: 18px;
+  color : hsl(234, 12%, 34%);
+}
+
+.cardInterior > p {
+  color : hsl(229, 6%, 66%);
+  font-size : 14px;
+  padding-top : .5em;
+  padding-bottom : 1.5em;
+}
+
+.cardInterior {
+  padding-block : 20px;
+  padding-inline : 1.5em;
+}
+
+.cardInterior > img {
+  width : 3.5em;
+  position : relative;
+  left : 12em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width : 1200px) {
+  .header {
+    justify-content: center;
+    width : 50em;
   }
-  to {
-    transform: rotate(360deg);
+  .cardContainer {
+    margin-top: 6em;
+    height : 40em;
+  }
+  .a {
+    position : relative;
+    right : 20em;
+    top : 14em;
+  }
+  .b {
+    position: relative;
+    bottom : 7em;
+  }
+  .c {
+    position: relative;
+    bottom : 7em;
+  }
+  .d {
+    position: relative;
+    bottom : 28.7em;
+    left : 19.9em;
   }
 }
